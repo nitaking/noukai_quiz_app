@@ -23,7 +23,7 @@ export default class ConsoleRoot extends React.Component<Props, {}> {
     if(score.rank > 1){
       nextButton = <button className="btn btn-danger btn-lg" onClick={() => browserHistory.push(`/ranking/${score.rank -1 }`)}>第{score.rank -1 }位</button>;
     }else{
-      nextButton = <button className="btn btn-info one-more-thing" onClick={() => browserHistory.push(`/ranking/action`)}>もうちっとだけ続くんじゃ</button>;
+      nextButton = null;
     }
 
     return (

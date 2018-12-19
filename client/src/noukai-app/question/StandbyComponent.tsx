@@ -20,9 +20,9 @@ export default class StandbyComponent extends React.Component<Props, {}> {
             }, 20000);
             if(noukaiState.isCorrectLastQuiz) return (
                 <div className="row">
-                    <div className="blinking"></div>
-                    <div className="panel panel-correct panel-default col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                    <div className="panel panel-correct panel-default col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 center">
                         <h3 className="text-center">正解です！！！</h3>
+                        <img src="/public/maru.png" className="center-block img-responsive" />
                     </div>
                 </div>
             );
@@ -36,10 +36,8 @@ export default class StandbyComponent extends React.Component<Props, {}> {
             );
         }
         return (
-            <div className="row">
-                <div className="panel panel-standby panel-default col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-                    <h4 className="text-center">次の問題までスクリーンをご覧ください。</h4>
-                </div>
+            <div className="panel panel-default panel-top5 col-xs-10 col-xs-offset-1 text-center">
+                <h4 className="text-center">次の問題までスクリーンをご覧ください。</h4>
             </div>
         );
     }

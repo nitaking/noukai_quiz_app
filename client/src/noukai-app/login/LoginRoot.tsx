@@ -49,25 +49,18 @@ export default class ChatRoot extends React.Component<Props, State> {
                   <div className="panel panel-default col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                       <div className="panel-body">
                           <div className="form-group">
-                              <Select
-                                placeholder="事業部（検索できます）"
-                                name="form-field-name"
-                                value={this.state.deps}
-                                options={options}
-                                onChange={this.changeDeps.bind(this)} />
-                          </div>
-
-                          <div className="form-group">
                               <input
                                 onChange={this.changeName.bind(this)}
                                 value={this.state.name}
                                 className="form-control"
                                 ref="nameInput"
-                                placeholder="おなまえ" />
+                                placeholder="ニックネーム" />
                           </div>
 
+                          <div className="padding-bottom">
                           <div className="text-center">
                               <button onClick={this.login.bind(this)} className="btn btn-warning">スタート</button>
+                          </div>
                           </div>
                       </div>
                   </div>

@@ -4,7 +4,7 @@ export class Paths{
     static RANKING_TOP5 = 'ranking/:rank';
     static MOST_CLICKER = 'ranking/action';
     static NOUKAI = 'noukai/:userId/:dept';
-    static NOUKAI_LOGIN = 'noukai_login';
+    static NOUKAI_LOGIN = 'home';
 }
 
 export interface IQuestion {

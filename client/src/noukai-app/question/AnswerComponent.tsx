@@ -62,7 +62,7 @@ export default class AnswerComponent extends React.Component<Props, State> {
             });
 
         return (
-            <div className="row">
+            <div>
                 <div className="panel panel-default panel-question-title col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                     <h2 className="text-center">第{question.id}問</h2>
                     <h3 className="text-center">{question.description}</h3>
