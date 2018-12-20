@@ -37,7 +37,7 @@ export default class QuestionRoot extends React.Component<Props, State> {
           ? <StandbyComponent state={this.props.noukaiState} actions={this.props.actions} />
           : <AnswerComponent state={this.props.noukaiState} actions={this.props.actions} />;
         return (
-            <div>
+            <div className="question container">
                 {mainContents}
             </div>
         )

@@ -50,18 +50,18 @@ export default class ConsoleRoot extends React.Component<Props, State> {
 
         let nextButton = <h3 className="text-center">50位 〜 6位</h3>;
         if (rankASC.size === 0){
-            nextButton = <button className="btn btn-danger btn-lg center-block" onClick={() => this.goNext.bind(this)(this.props.state.ranking.length)}>スタート</button>
+            nextButton = <button className="btn btn-danger btn-lg" onClick={() => this.goNext.bind(this)(this.props.state.ranking.length)}>スタート</button>
         }else if (rankASC.get(0).rank === 6){
             nextButton = <button className="btn btn-danger btn-lg center-block" onClick={() => browserHistory.push("/ranking/5")}>第5位</button>;
         }
         return (
             <div className="ranking container">
-                <div className="row">
+                {/*<div className="row">*/}
                     <div className="panel panel-default panel-ranking col-xs-10 col-xs-offset-1">
                         <h2 className="text-center">ランク発表</h2>
-                        {nextButton}
+                        <div className="center-block">{nextButton}</div>
                     </div>
-                </div>
+                {/*</div>*/}
                 <ul className="list-group">
                     {ranks}
                 </ul>

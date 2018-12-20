@@ -3,3 +3,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+.center-block {
+  display: table;
+  margin: 0 auto;
+}
